@@ -15,7 +15,7 @@ build:
 publish:
   stage: publish
   tags:
-    - win
+    - docker
   only: 
     refs:
       - master
