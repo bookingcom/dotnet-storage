@@ -14,7 +14,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Booking.Common.Encryption" Version="1.2018.8.221232" />
+    <PackageReference Include="Booking.Common.Encryption" Version="1.2018.8.221239" />
   </ItemGroup>
 
 
