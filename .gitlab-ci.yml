@@ -20,7 +20,7 @@ publish:
     refs:
       - master
   script:
-     - mkdir /root/nupkgs
+    - mkdir /root/nupkgs
     - /root/dotnet/dotnet pack Booking.Azure.Storage/Booking.Azure.Storage.csproj --configuration Release --output /root/nupkgs /p:PackageVersion="1.$(date -d 'now' '+%Y.%m.%d%H%M')"
     - /root/dotnet/dotnet pack Booking.Common.Storage.Abstractions/Booking.Common.Storage.Abstractions.csproj --configuration Release --output /root/nupkgs /p:PackageVersion="1.$(date -d 'now' '+%Y.%m.%d%H%M')"
     - /root/dotnet/dotnet pack Booking.Common.Storage.Encryption/Booking.Common.Storage.Encryption.csproj --configuration Release --output /root/nupkgs /p:PackageVersion="1.$(date -d 'now' '+%Y.%m.%d%H%M')"
