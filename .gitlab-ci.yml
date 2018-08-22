@@ -1,0 +1,33 @@
+image: docker-registry.booking.com/itsba/azure-deploy
+stages:
+    - build
+    - publish
+    
+build:
+  stage: build
+  tags:
+    - docker
+  script:
+    - dotnet build 
+    
+   
+    
+publish:
+  stage: publish
+  tags:
+    - win
+  only: 
+    refs:
+      - master
+  script:
+     - mkdir /root/nupkgs
+    - /root/dotnet/dotnet pack Booking.Azure.Storage/Booking.Azure.Storage.csproj --configuration Release --output /root/nupkgs /p:PackageVersion="1.$(date -d 'now' '+%Y.%m.%d%H%M')"
+    - /root/dotnet/dotnet pack Booking.Common.Storage.Abstractions/Booking.Common.Storage.Abstractions.csproj --configuration Release --output /root/nupkgs /p:PackageVersion="1.$(date -d 'now' '+%Y.%m.%d%H%M')"
+    - /root/dotnet/dotnet pack Booking.Common.Storage.Encryption/Booking.Common.Storage.Encryption.csproj --configuration Release --output /root/nupkgs /p:PackageVersion="1.$(date -d 'now' '+%Y.%m.%d%H%M')"
+    - /root/dotnet/dotnet pack Booking.Windows.Storage/Booking.Windows.Storage.csproj --configuration Release --output /root/nupkgs /p:PackageVersion="1.$(date -d 'now' '+%Y.%m.%d%H%M')"
+    - for fn in `find /root/nupkgs/ -name "*.nupkg"`; do
+            /root/dotnet/dotnet nuget push $fn -k $PUBLICNUGETKEY -s https://api.nuget.org/v3/index.json &
+            /root/dotnet/dotnet nuget push $fn -k "$NUGET_KEY" -s https://nexus.booking.com/nexus/service/local/nuget/nuget-releases/ &
+      done
+    - wait
+

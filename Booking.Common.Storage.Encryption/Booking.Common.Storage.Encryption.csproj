@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+
+    <PackageId>Booking.Common.Storage.Encryption</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>IT Services - Business Application Team</Authors>
+    <Description>Storage client for encryption at rest</Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>First release</PackageReleaseNotes>
+    <Copyright>Copyright 2017 (c) Booking.com. All rights reserved.</Copyright>
+    <PackageTags>Storage encryption rest BITS </PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Booking.Common.Encryption" Version="1.2018.7.301406" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\Booking.Common.Storage.Abstractions\Booking.Common.Storage.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

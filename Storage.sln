@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Booking.Azure.Storage", "Booking.Azure.Storage\Booking.Azure.Storage.csproj", "{1FFD08B4-3DBC-4CFE-8A41-90578050843B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Booking.Common.Storage.Abstractions", "Booking.Common.Storage.Abstractions\Booking.Common.Storage.Abstractions.csproj", "{B5D92CAE-CE9D-4F25-A13D-2807EF9E9AF5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Booking.Common.Storage.Encryption", "Booking.Common.Storage.Encryption\Booking.Common.Storage.Encryption.csproj", "{B39A36B0-DCC0-4974-B0DB-746E67EEBBD9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Booking.Windows.Storage", "Booking.Windows.Storage\Booking.Windows.Storage.csproj", "{705A90AD-08AF-4C69-8B08-F7673FA47925}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1FFD08B4-3DBC-4CFE-8A41-90578050843B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FFD08B4-3DBC-4CFE-8A41-90578050843B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FFD08B4-3DBC-4CFE-8A41-90578050843B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FFD08B4-3DBC-4CFE-8A41-90578050843B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5D92CAE-CE9D-4F25-A13D-2807EF9E9AF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5D92CAE-CE9D-4F25-A13D-2807EF9E9AF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5D92CAE-CE9D-4F25-A13D-2807EF9E9AF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5D92CAE-CE9D-4F25-A13D-2807EF9E9AF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B39A36B0-DCC0-4974-B0DB-746E67EEBBD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B39A36B0-DCC0-4974-B0DB-746E67EEBBD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B39A36B0-DCC0-4974-B0DB-746E67EEBBD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B39A36B0-DCC0-4974-B0DB-746E67EEBBD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{705A90AD-08AF-4C69-8B08-F7673FA47925}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{705A90AD-08AF-4C69-8B08-F7673FA47925}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{705A90AD-08AF-4C69-8B08-F7673FA47925}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{705A90AD-08AF-4C69-8B08-F7673FA47925}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D1AA944E-7AAC-47B0-AE76-245117CA40D9}
+	EndGlobalSection
+EndGlobal

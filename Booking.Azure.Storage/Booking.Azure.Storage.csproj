@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+
+    <PackageId>Booking.Azure.Storage</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>IT Services - Business Application Team</Authors>
+    <Description>Azure Storage Client for single file retrieval</Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>First release</PackageReleaseNotes>
+    <Copyright>Copyright 2017 (c) Booking.com. All rights reserved.</Copyright>
+    <PackageTags>Azure storage BITS </PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Options" Version="2.1.1" />
+    <PackageReference Include="WindowsAzure.Storage" Version="8.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Booking.Common.Storage.Abstractions\Booking.Common.Storage.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>
