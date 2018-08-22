@@ -8,7 +8,7 @@ build:
   tags:
     - docker
   script:
-    - dotnet build 
+    - /root/dotnet/dotnet build 
     
    
     
